@@ -857,12 +857,18 @@ export default function HomePage() {
             {/* Company Info */}
             <div className="lg:col-span-2">
               <div className="flex items-center space-x-3 mb-6">
-                <div className="w-12 h-12 bg-gradient-to-br from-[#c2121f] to-white rounded-lg flex items-center justify-center">
-                  <Calculator className="w-7 h-7 text-[#01304a]" />
-                </div>
+<div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center overflow-hidden">
+  <Image
+    src="/logo.png"
+    alt="Logo Accelerate"
+    width={40}
+    height={40}
+    className="object-contain"
+  />
+</div>
                 <div>
                   <h3 className="text-2xl font-bold">Accelerate Indonesia</h3>
-                  <p className="text-gray-300">Solusi Akuntansi Profesional</p>
+                  <p className="text-gray-300">Solusi Akuntansi Handal</p>
                 </div>
               </div>
               <p className="text-gray-300 leading-relaxed mb-6 max-w-md">
@@ -989,21 +995,11 @@ export default function HomePage() {
 
           {/* Bottom Footer */}
           <div className="border-t border-white/20 pt-8">
-            <div className="flex flex-col md:flex-row items-center justify-between">
+            <div className="flex justify-center">
               <p className="text-gray-300 text-sm mb-4 md:mb-0">
                 © {new Date().getFullYear()} Accelerate Indonesia. All rights reserved.
               </p>
-              <div className="flex items-center space-x-6 text-sm">
-                <Link href="#" className="text-gray-300 hover:text-white transition-colors duration-300">
-                  Privacy Policy
-                </Link>
-                <Link href="#" className="text-gray-300 hover:text-white transition-colors duration-300">
-                  Terms of Service
-                </Link>
-                <Link href="#" className="text-gray-300 hover:text-white transition-colors duration-300">
-                  Sitemap
-                </Link>
-              </div>
+
             </div>
           </div>
         </div>
